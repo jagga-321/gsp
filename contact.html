@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact | Great Southern Plumbing (SA) — Quote Request, Fleurieu SA</title>
+<meta name="description" content="Get a free plumbing quote from Great Southern Plumbing (SA). Licensed Fleurieu plumber — septics, gas, hot water, new homes, maintenance. Call Scott 0429 966 556."/>
+<meta name="theme-color" content="#0A0A0A"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a href="index.html" class="brand"><img src="logo-placeholder.svg" alt="Great Southern Plumbing (SA)" class="brand__logo"/></a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="header-cta">
+            <a href="tel:0429966556" class="btn btn--phone">Call Now</a>
+            <button class="menu-toggle" onclick="document.getElementById('drawer').classList.add('open')" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-drawer" id="drawer">
+    <button class="mobile-drawer__close" onclick="document.getElementById('drawer').classList.remove('open')" aria-label="Close">×</button>
+    <nav class="mobile-drawer__nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-drawer__footer">
+        <p>Call us · 0429 966 556</p>
+        <p style="margin-top:8px">Middleton / Fleurieu SA</p>
+    </div>
+</div>
+
+<!-- SUB HERO -->
+<section class="subhero">
+    <div class="container">
+        <div class="subhero__eyebrow text-eyebrow">// 04 — Contact</div>
+        <h1 class="subhero__title h-mega">
+            Let's get<br/>
+            <span class="text-orange">your job done.</span>
+        </h1>
+        <p class="subhero__lead text-lead">
+            Fastest way is a phone call. If you'd rather lay out the details, fill the quote form below —
+            we'll come back to you within 24 hours, usually same day.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- INFO -->
+            <div class="contact-info">
+                <div class="contact-info__item">
+                    <div class="contact-info__label">// Phone — quickest</div>
+                    <div class="contact-info__value"><a href="tel:0429966556">0429 966 556</a></div>
+                    <p class="contact-info__sub">Mon–Sat · 7am to 5pm. Sundays for emergencies.</p>
+                </div>
+                <div class="contact-info__item">
+                    <div class="contact-info__label">// Email</div>
+                    <div class="contact-info__value contact-info__value--email"><a href="mailto:[email-placeholder]">[email-placeholder]</a></div>
+                    <p class="contact-info__sub">For non-urgent enquiries and quote requests with photos/plans.</p>
+                </div>
+                <div class="contact-info__item">
+                    <div class="contact-info__label">// Service area</div>
+                    <div class="contact-info__value">Southern Fleurieu</div>
+                    <p class="contact-info__sub">
+                        Based Middleton. Servicing Victor Harbor, Goolwa, Port Elliot, Encounter Bay, and surrounding areas.
+                    </p>
+                </div>
+                <div class="contact-info__item">
+                    <div class="contact-info__label">// Response time</div>
+                    <div class="contact-info__value">24 Hours Max</div>
+                    <p class="contact-info__sub">Most enquiries get a same-day reply. Urgent? Just call.</p>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <form class="form" onsubmit="return submitQuoteForm(event)">
+                <div class="form__group">
+                    <label for="qf-name">Your Name</label>
+                    <input id="qf-name" name="name" type="text" placeholder="John Smith" required/>
+                </div>
+
+                <div class="form__group form__group--row">
+                    <div>
+                        <label for="qf-phone">Phone</label>
+                        <input id="qf-phone" name="phone" type="tel" placeholder="0429 966 556" required/>
+                    </div>
+                    <div>
+                        <label for="qf-email">Email</label>
+                        <input id="qf-email" name="email" type="email" placeholder="you@example.com"/>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label for="qf-location">Job Location</label>
+                    <input id="qf-location" name="location" type="text" placeholder="Suburb / town"/>
+                </div>
+
+                <div class="form__group form__group--row">
+                    <div>
+                        <label for="qf-service">Service Needed</label>
+                        <select id="qf-service" name="service">
+                            <option>New home plumbing</option>
+                            <option>Septic / wastewater install</option>
+                            <option>Septic repair / upgrade</option>
+                            <option>Hot water system</option>
+                            <option>Gas fitting</option>
+                            <option>Leak / blockage / repair</option>
+                            <option>Drain clearing / CCTV</option>
+                            <option>Stormwater / drainage</option>
+                            <option>Rainwater tank install</option>
+                            <option>Bathroom / kitchen renovation</option>
+                            <option>Commercial plumbing</option>
+                            <option>Emergency / urgent</option>
+                            <option>Other / not sure</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="qf-timing">When</label>
+                        <select id="qf-timing" name="timing">
+                            <option>Urgent (this week)</option>
+                            <option>Within 2 weeks</option>
+                            <option>This month</option>
+                            <option>Next month or later</option>
+                            <option>Flexible / just exploring</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label for="qf-details">Job Details</label>
+                    <textarea id="qf-details" name="details" placeholder="Tell us what you need done. Size of area, type of work, any access info, etc." maxlength="1500" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--large" style="width:100%">
+                    Send Quote Request →
+                </button>
+                <p class="text-mute" style="font-size:11px;text-align:center;margin-top:16px;letter-spacing:0.05em">
+                    Submitting opens your email app with the details pre-filled. Or call us direct.
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- WORK HOURS -->
+<section class="section section--dark">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-header__eyebrow text-eyebrow">// When we work</div>
+            <h2 class="section-header__title h-display">
+                Available when<br/>
+                <span class="text-orange">you need us.</span>
+            </h2>
+        </div>
+
+        <div class="areas">
+            <div class="area">
+                <div class="area__type area__type--local">Standard ●</div>
+                <div class="area__name">Monday – Friday</div>
+                <div class="area__suburbs">7am – 5pm · Regular rates</div>
+            </div>
+            <div class="area">
+                <div class="area__type area__type--regional">Available ●</div>
+                <div class="area__name">Saturday</div>
+                <div class="area__suburbs">By arrangement · Slight surcharge may apply</div>
+            </div>
+            <div class="area">
+                <div class="area__type area__type--regional">Available ●</div>
+                <div class="area__name">Sunday / Public Holiday</div>
+                <div class="area__suburbs">Emergency work only · Premium rates</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+    <div class="container cta-band__inner">
+        <h2 class="cta-band__title">Got a question<br/>before you commit?</h2>
+        <p class="cta-band__lead">
+            Just ring. Most quote questions can be answered on the phone in 5 minutes.
+            No obligation, no sales rubbish — just a quick chat about your job.
+        </p>
+        <div class="cta-band__ctas">
+            <a href="tel:0429966556" class="btn btn--primary btn--large">Call 0429 966 556</a>
+            <a href="mailto:[email-placeholder]" class="btn btn--outline btn--large">Email Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="brand" style="margin-bottom:20px"><img src="logo-placeholder.svg" alt="Great Southern Plumbing (SA)" class="brand__logo"/></a>
+                <p style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:var(--color-orange);margin-top:16px">From mains to tap.</p>
+                <p class="text-dim" style="font-size:14px;line-height:1.6;margin-top:16px;max-width:400px">
+                    Licensed plumber and gas fitter based in Middleton, servicing the southern Fleurieu since 2006.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-col__heading">Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-col__heading">Get in Touch</h3>
+                <ul>
+                    <li><a href="tel:0429966556">0429 966 556</a></li>
+                    <li><a href="mailto:[email-placeholder]">[email-placeholder]</a></li>
+                    <li class="text-mute" style="padding-top:12px">Middleton / Fleurieu</li>
+                    <li class="text-mute">South Australia 5211</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Great Southern Plumbing (SA)</span>
+            <span>LIC: PGE237715<br/>ACN: 148131113<br/>ABN: 90144358602 · Fully insured</span>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
